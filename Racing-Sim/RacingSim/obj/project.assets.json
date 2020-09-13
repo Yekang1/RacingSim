@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YeKang\\source\\repos\\RacingSim\\RacingSim.csproj",
+      "projectUniqueName": "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\RacingSim\\RacingSim.csproj",
       "projectName": "RacingSim",
-      "projectPath": "C:\\Users\\YeKang\\source\\repos\\RacingSim\\RacingSim.csproj",
+      "projectPath": "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\RacingSim\\RacingSim.csproj",
       "packagesPath": "C:\\Users\\YeKang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YeKang\\source\\repos\\RacingSim\\obj\\",
+      "outputPath": "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\RacingSim\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\YeKang\\AppData\\Roaming\\NuGet\\NuGet.Config",
