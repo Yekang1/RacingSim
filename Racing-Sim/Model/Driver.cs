@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model
 {
-    class Driver
+    public class Driver
     {
     }
 }

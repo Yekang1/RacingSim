@@ -6,6 +6,8 @@ namespace Model
 {
     public class Section
     {
+        
+
         public enum SectionTypes
         {
             Straight,
@@ -16,5 +18,10 @@ namespace Model
         }
 
         public SectionTypes SectionType { get; set; }
+
+        public Section(SectionTypes sectionType)
+        {
+            SectionType = sectionType;
+        }
     }
 }
