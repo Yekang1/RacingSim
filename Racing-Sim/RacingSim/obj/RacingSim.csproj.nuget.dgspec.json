@@ -92,7 +92,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
