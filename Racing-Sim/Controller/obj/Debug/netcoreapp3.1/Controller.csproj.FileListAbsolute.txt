@@ -7,3 +7,6 @@ C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\obj\Debug\
 C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CoreCompileInputs.cache
 C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\obj\Debug\netcoreapp3.1\Controller.dll
 C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\obj\Debug\netcoreapp3.1\Controller.pdb
+C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\YeKang\source\repos\Race Sim\RacingSim\Racing-Sim\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete

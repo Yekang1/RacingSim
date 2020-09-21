@@ -7,13 +7,46 @@ using Model;
 
 namespace Controller
 {
-    static class Data
+    public static class Data
     {
-        static Competition Competition { get; set; }
+        public static Competition Competition { get; set; }
+        public static Race CurrentRace { get; set; }
 
-        static void Initialize(Competition competition)
+        public static void Initialize()
         {
-            competition = Competition;
+            Competition = new Competition();
+            DeelnemerToeVoegen();
+            TrackToeVoegen();
+        }
+
+        public static void DeelnemerToeVoegen()
+        {
+            IParticipant driver1 = new Driver("Test");
+            IParticipant driver2 = new Driver("bob");
+            IParticipant driver3 = new Driver("top");
+
+            Competition.Participants.Add(driver1);
+            Competition.Participants.Add(driver2);
+            Competition.Participants.Add(driver3);
+        }
+
+        public static void TrackToeVoegen()
+        {
+            Track track1 = new Track("coolTrack");
+            Track track2 = new Track("AWEASOMEA");
+            Track track3 = new Track("TRACKMANIA");
+
+            Competition.Tracks.Enqueue(track1);
+            Competition.Tracks.Enqueue(track2);
+            Competition.Tracks.Enqueue(track3);
+        }
+        public static void NextRace()
+        {
+            var race = Competition.NextTrack();
+            if (race != null)
+            {
+                CurrentRace = new Race(race, Competition.Participants);
+            }
         }
     }
 }

@@ -10,10 +10,9 @@ namespace Model
         public string Name { get; set; }
         public LinkedList<Section> Sections { get; set; }
 
-        public Track(string name, LinkedList<Section> sections)
+        public Track(string name)
         {
             Name = name;
-            Sections = sections;
         }
 
         public Track(string name, SectionTypes[] sections)
