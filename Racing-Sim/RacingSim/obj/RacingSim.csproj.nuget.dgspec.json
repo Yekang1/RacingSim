@@ -26,7 +26,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\Controller\\Controller.csproj"
+              },
+              "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\YeKang\\source\\repos\\Race Sim\\RacingSim\\Racing-Sim\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
