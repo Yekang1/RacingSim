@@ -11,9 +11,9 @@ namespace Model
         public IEquipment Equipment { get; set; }
         public IParticipant.TeamColors TeamColor { get; set; }
 
-        public Driver (String name)
+        public Driver (string name)
         {
-            name = Name;
+            Name = name;
         }
     }
 }
