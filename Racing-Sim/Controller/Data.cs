@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 using Model;
-
+using static Model.Section;
 
 namespace Controller
 {
@@ -17,6 +17,7 @@ namespace Controller
             Competition = new Competition();
             DeelnemerToeVoegen();
             TrackToeVoegen();
+            
         }
 
         public static void DeelnemerToeVoegen()
@@ -32,7 +33,7 @@ namespace Controller
 
         public static void TrackToeVoegen()
         {
-            Track track1 = new Track("coolTrack");
+            Track track1 = new Track("MooieTrack", new Section.SectionTypes[] { SectionTypes.RightCorner, SectionTypes.StartGrid, SectionTypes.Finish, SectionTypes.Straight, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.LeftCorner, SectionTypes.Straight, SectionTypes.RightCorner, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.LeftCorner, SectionTypes.Straight, SectionTypes.RightCorner, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.LeftCorner, SectionTypes.RightCorner, SectionTypes.RightCorner, SectionTypes.LeftCorner, SectionTypes.LeftCorner, SectionTypes.Straight, SectionTypes.LeftCorner, SectionTypes.Straight, SectionTypes.Straight, SectionTypes.LeftCorner, SectionTypes.RightCorner, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.Straight, SectionTypes.Straight, SectionTypes.Straight });
             Track track2 = new Track("AWEASOMEA");
             Track track3 = new Track("TRACKMANIA");
 
@@ -42,10 +43,11 @@ namespace Controller
         }
         public static void NextRace()
         {
-            var race = Competition.NextTrack();
-            if (race != null)
+            var track = Competition.NextTrack();
+            if (track != null)
             {
-                CurrentRace = new Race(race, Competition.Participants);
+                CurrentRace = new Race(track, Competition.Participants);
+
             }
         }
     }

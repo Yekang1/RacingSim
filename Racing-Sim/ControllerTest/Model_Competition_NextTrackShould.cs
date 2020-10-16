@@ -3,6 +3,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static Model.Section;
 
 namespace ControllerTest
 {
@@ -10,11 +11,13 @@ namespace ControllerTest
     public class Model_Competition_NextTrackShould
     {
         private Competition _competition;
+        private Track _track;
 
         [SetUp]
         public void SetUp()
         {
             _competition = new Competition();
+            _track = new Track("Test");
         }
 
         [Test]
@@ -29,6 +32,7 @@ namespace ControllerTest
             Track track = new Track("UNITTEST");
             _competition.Tracks.Enqueue(track);
             var result = _competition.NextTrack();
+           
 
             
             Assert.AreEqual(track, result);
@@ -62,8 +66,18 @@ namespace ControllerTest
                 if (i == 1)
                 {
                     Assert.AreEqual(result, track2);
+                    
                 }
             }
+            
+        }
+
+        [Test]
+        public void ArrayToLinkedList_ReturnIsNotNull()
+        {
+            SectionTypes[] sectie = new SectionTypes[] { SectionTypes.Finish};
+            var result = _track.ArrayToLinkedList(sectie);
+            Assert.IsNotNull(result);
             
         }
     }

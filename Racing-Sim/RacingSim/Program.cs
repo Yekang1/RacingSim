@@ -2,6 +2,7 @@
 using System.Threading;
 using Controller;
 using Model;
+using static Model.Section;
 
 namespace RacingSim
 {
@@ -11,7 +12,9 @@ namespace RacingSim
         {
             Data.Initialize();
             Data.NextRace();
-            Console.WriteLine($"{Data.CurrentRace.Track.Name}");
+            Visualisatie.Initalize();
+            Visualisatie.Drawtrack(Data.CurrentRace.Track);
+
             for (; ; )
             {
                 Thread.Sleep(100);
