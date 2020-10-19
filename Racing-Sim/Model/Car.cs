@@ -13,7 +13,10 @@ namespace Model
 
         public Car()
         {
-          
+            Quality = 0;
+            Performance = 0;
+            Speed = 10;
+
         }
     }
 }

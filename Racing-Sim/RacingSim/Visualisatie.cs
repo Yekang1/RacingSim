@@ -105,7 +105,7 @@ namespace RacingSim
             Console.SetCursorPosition(x, y);
             foreach (Section tracks in track.Sections)
             {   
-                SectionData sectiontdata = Data.CurrentRace.getSectionData(tracks);
+                SectionData sectiontdata = Data.CurrentRace.GetSectionData(tracks);
                 if (tracks.SectionType.Equals(Section.SectionTypes.RightCorner))
                 {
                     if (richting == "Noord")
